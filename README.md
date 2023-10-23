@@ -7,19 +7,24 @@ python main.py [COMMAND] [flags]
 
 as you can see in the helper menu: 
 
- Usage: main.py [OPTIONS] COMMAND [ARGS]...                                                                                                                                                                                             
-                                                                                                                                                                                                                                        
+ Usage: main.py [OPTIONS] COMMAND [ARGS]...                                                                                                                                      
+
+ ```
 ╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ --install-completion          Install completion for the current shell.                                                                                                                                                              │
 │ --show-completion             Show completion for the current shell, to copy it or customize the installation.                                                                                                                       │
 │ --help                        Show this message and exit.                                                                                                                                                                            │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+```
 ╭─ Commands ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ create-attachments                    Receives a list of Environments in input and attaches all those environments to related environment group                                                                                      │
 │ delete-attachments                    Receives a list of Attachments of given organization to be detached (deleted)                                                                                                                  │
 │ get-attachment                        Get info about a specified Attachment of a given Organization                                                                                                                                  │
 │ get-attachment-list                   Get list of all Attachments of given Organization                                                                                                                                              │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 
 ## AUTH
 
@@ -37,13 +42,14 @@ returns info about an attachment of a specified project
                                                                                                                                                                                                                                         
  Usage: main.py get-attachment [OPTIONS]                                                                                                                                                                                                
                                                                                                                                                                                                                                         
- Get info about a specified Attachment of a given Organization                                                                                                                                                                          
-                                                                                                                                                                                                                                        
+ Get info about a specified Attachment of a given Organization
+ ```
 ╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ *  --organization  -o      TEXT  Apigee Organization [default: None] [required]                                                                                                                                                      │
 │ *  --attachment    -a      TEXT  Attachment unique name [default: None] [required]                                                                                                                                                   │
 │    --help                        Show this message and exit.                                                                                                                                                                         │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 
 Example command:
 ```shell
@@ -57,12 +63,13 @@ returns list of all attachments of specified project
                                                                                                                                                                                                                                         
  Usage: main.py get-attachment-list [OPTIONS]                                                                                                                                                                                           
                                                                                                                                                                                                                                         
- Get list of all Attachments of given Organization                                                                                                                                                                                      
-                                                                                                                                                                                                                                        
+ Get list of all Attachments of given Organization
+ ```
 ╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ *  --organization  -o      TEXT  Apigee Organization [default: None] [required]                                                                                                                                                      │
 │    --help                        Show this message and exit.                                                                                                                                                                         │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 
 Example command:
 ```shell
@@ -75,13 +82,14 @@ creates one or more attachment, by passing to flag --environments one or more en
                                                                                                                                                                                                                                         
  Usage: main.py create-attachments [OPTIONS]                                                                                                                                                                                            
                                                                                                                                                                                                                                         
- Receives a list of Environments in input and attaches all those environments to related environment group                                                                                                                              
-                                                                                                                                                                                                                                        
+ Receives a list of Environments in input and attaches all those environments to related environment group 
+ ```
 ╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ *  --organization  -o      TEXT  Apigee Organization [default: None] [required]                                                                                                                                                      │
 │ *  --environment   -e      TEXT  Apigee environments, can be a single element or a list [default: None] [required]                                                                                                                   │
 │    --help                        Show this message and exit.                                                                                                                                                                         │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 
 Example command:
 ```shell
@@ -95,13 +103,14 @@ deletes one or more attachment, by passing to flag --attachments one or more att
                                                                                                                                                                                                                                         
  Usage: main.py delete-attachments [OPTIONS]                                                                                                                                                                                            
                                                                                                                                                                                                                                         
- Receives a list of Attachments of given organization to be detached (deleted)                                                                                                                                                          
-                                                                                                                                                                                                                                        
+ Receives a list of Attachments of given organization to be detached (deleted)
+ ```
 ╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ *  --organization  -o      TEXT  Apigee Organization [default: None] [required]                                                                                                                                                      │
 │ *  --attachment    -a      TEXT  Apigee attachments, can be a single element or a list [default: None] [required]                                                                                                                    │
 │    --help                        Show this message and exit.                                                                                                                                                                         │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 
 Example command:
 ```shell
