@@ -8,12 +8,12 @@ python main.py [COMMAND] [flags]
 as you can see in the helper menu: 
 
  Usage: main.py [OPTIONS] COMMAND [ARGS]...                                                                                                                                                                                             
-                                                                                                                                                                                                                                ```shell        
-╭─ Options 
+                                                                                                                                                                                                                                        
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ --install-completion          Install completion for the current shell.                                                                                                                                                              │
 │ --show-completion             Show completion for the current shell, to copy it or customize the installation.                                                                                                                       │
-│ --help                        Show this message and exit.                                                                                                                                                                     ```       
-
+│ --help                        Show this message and exit.                                                                                                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ╭─ Commands ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ create-attachments                    Receives a list of Environments in input and attaches all those environments to related environment group                                                                                      │
 │ delete-attachments                    Receives a list of Attachments of given organization to be detached (deleted)                                                                                                                  │
